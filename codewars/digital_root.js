@@ -1,3 +1,5 @@
+// https://www.codewars.com/kata/541c8630095125aba6000c00
+
 // Convert a number (85262) to an array ([ 8, 5, 2, 6, 2 ]) for iteration
 const createNumberArray = (num) => {
     const numberArray = num.toString().split('').map(digit => {
