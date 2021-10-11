@@ -23,15 +23,15 @@ $challenge_description
 
 ## Example
 
-Input: \`\`
+**Input:** \`\`
 
-Output: \`\`
+**Output:** \`\`
 
 </br>
 
-Input: \`\`
+**Input:** \`\`
 
-Output: \`\`" > "custom/$challenge_name/README.md"
+**Output:** \`\`" > "custom/$challenge_name/README.md"
 
 echo "exports.solution1 = () => {
     
