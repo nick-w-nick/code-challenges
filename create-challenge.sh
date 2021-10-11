@@ -23,7 +23,15 @@ $challenge_description
 
 ## Example
 
-- \`input\` = \`output\`" > "custom/$challenge_name/README.md"
+Input: \`\`
+
+Output: \`\`
+
+</br>
+
+Input: \`\`
+
+Output: \`\`" > "custom/$challenge_name/README.md"
 
 echo "exports.solution1 = () => {
     
@@ -39,7 +47,7 @@ const scenarios = [
 ];
 
 describe.each(scenarios)('$challenge_description', ({ value, expected }) => {
-    test.each(Object.keys(solutions))("'`%s ({value})`'", (solution) => {
+    test.each(Object.keys(solutions))("'`%s (${value})`'", (solution) => {
         expect(solutions[solution](value)).toEqual(expected);
     });
 });" > "custom/$challenge_name/solutions.test.js"
