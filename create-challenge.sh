@@ -23,11 +23,11 @@ $challenge_description
 
 ## Example
 
-- \`input\` = \`output\`" > custom/$challenge_name/README.md
+- \`input\` = \`output\`" > "custom/$challenge_name/README.md"
 
 echo "exports.solution1 = () => {
     
-};" > custom/$challenge_name/solutions.js
+};" > "custom/$challenge_name/solutions.js"
 
 echo "const solutions = require('./solutions.js');
 
@@ -42,4 +42,4 @@ describe.each(scenarios)('$challenge_description', ({ value, expected }) => {
     test.each(Object.keys(solutions))("'`%s ({value})`'", (solution) => {
         expect(solutions[solution](value)).toEqual(expected);
     });
-});" > custom/$challenge_name/solutions.test.js
+});" > "custom/$challenge_name/solutions.test.js"
