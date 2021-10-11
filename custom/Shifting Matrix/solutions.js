@@ -9,5 +9,4 @@ exports.solution1 = (rows) => {
         initialArray.push(currentRow);
     }
     return initialArray;
-
 };
