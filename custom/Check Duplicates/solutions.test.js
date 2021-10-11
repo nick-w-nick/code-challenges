@@ -1,12 +1,27 @@
 const solutions = require('./solutions.js');
 
-const solutionExports = Object.keys(solutions);
+const scenarios = [
+    {
+        value: 'a',
+        expected: false
+    },
+    {
+        value: 'aa',
+        expected: true
+    },
+    {
+        value: 'abc',
+        expected: false
+    },
+    {
+        value: 'aabbcc',
+        expected: true
+    },
+];
 
-solutionExports.forEach(solution => {
-    test(`Checks if duplicate characters are present within a string - ${solution}`, () => {
-        expect(solutions[solution]('a')).toBe(false);
-        expect(solutions[solution]('aa')).toBe(true);
-        expect(solutions[solution]('abc')).toBe(false);
-        expect(solutions[solution]('aabbcc')).toBe(true); 
+
+describe.each(scenarios)('Checks if duplicate characters are present within a string', ({ value, expected }) => {
+    test.each(Object.keys(solutions))(`%s (${value})`, (solution) => {
+        expect(solutions[solution](value)).toEqual(expected);
     });
 });
