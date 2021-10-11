@@ -4,9 +4,9 @@ Create a matrix in which the 1 shifts over once to the right each row
 
 ## Example
 
-Input: `2`
+**Input:** `2`
 
-Output:
+**Output:**
 
 ```js
 [
@@ -17,9 +17,9 @@ Output:
 
 </br>
 
-Input: `5`
+**Input:** `5`
 
-Output:
+**Output:**
 ```js
 [
     [ 1, 0, 0, 0, 0 ],
@@ -32,9 +32,9 @@ Output:
 
 </br>
 
-Input: `10`
+**Input:** `10`
 
-Output:
+**Output:**
 ```js
 [
     [1, 0, 0, 0, 0, 0, 0, 0, 0, 0], 

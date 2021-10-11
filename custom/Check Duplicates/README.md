@@ -4,10 +4,24 @@ Check for duplicates within a string and return true if a duplicate character is
 
 ## Example
 
-`a` = `false`
+**Input:** `a`
 
-`aa` = `true`
+**Output:** `false`
 
-`abc` = `false`
+</br>
 
-`abca` = `true`
+**Input:** `aa`
+
+**Output:** `true`
+
+</br>
+
+**Input:** `abc`
+
+**Output:** `false`
+
+</br>
+
+**Input:** `abca`
+
+**Output:** `true`
