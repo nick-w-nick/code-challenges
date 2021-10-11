@@ -1,7 +1,4 @@
-// Multiply odd numbers by 3 and add 1, divide even numbers by 2, stop when the result equals 1
-// Inspired by: https://www.youtube.com/watch?v=094y1Z2wpJg (Veritasium)
-
-function three_x_plus_one(x) {
+exports.solution1 = (x) => {
     let iterations = 0;
     let divides = 0;
     let multiplies = 0;
@@ -35,8 +32,3 @@ function three_x_plus_one(x) {
         multiplies: multiplies
     };
 };
-
-console.log(three_x_plus_one(1)); // { iterations: 3, peak: 4, divides: 2, multiplies: 1 }
-console.log(three_x_plus_one(5)); // { iterations: 5, peak: 16, divides: 4, multiplies: 1 }
-console.log(three_x_plus_one(26)); // { iterations: 10, peak: 40, divides: 8, multiplies: 2 }
-console.log(three_x_plus_one(27)); // { iterations: 111, peak: 9232, divides: 70, multiplies: 41 }
