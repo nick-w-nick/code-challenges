@@ -7,7 +7,7 @@ const createNumberArray = (num) => {
     });
     
     return numberArray;
-}
+};
 
 const digital_root = (number) => {
     // Standard reducer, straight from MDN docs
@@ -23,11 +23,11 @@ const digital_root = (number) => {
     // Each time the reduce function runs the size of the array decreases
     while (singleDigit.length > 1) {
         singleDigit = createNumberArray(singleDigit.reduce(reducer));
-    }
+    };
     
     // Return the final single digit number
     // This will not trigger until the while loop above has stopped/evaluated to false
     return singleDigit[0];
-}
+};
 
-console.log(digital_root(8888));
+console.log(digital_root(5555));
