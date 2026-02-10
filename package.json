@@ -5,7 +5,10 @@
     "main": "index.js",
     "scripts": {
         "test": "jest",
-        "is_prime": "tsx codewars/is_prime.ts"
+        "is_prime": "tsx codewars/is_prime.ts",
+        "identify_case": "tsx codewars/identify_case.ts",
+        "invoice": "tsx custom/Invoice_Calculations/invoice.ts",
+        "monthly_charge": "tsx custom/Invoice_Calculations/monthly_charge.ts"
     },
     "repository": {
         "type": "git",
