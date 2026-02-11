@@ -8,7 +8,8 @@
         "is_prime": "tsx codewars/is_prime.ts",
         "identify_case": "tsx codewars/identify_case.ts",
         "invoice": "tsx custom/Invoice_Calculations/invoice.ts",
-        "monthly_charge": "tsx custom/Invoice_Calculations/monthly_charge.ts"
+        "monthly_charge": "tsx custom/Invoice_Calculations/monthly_charge.ts",
+        "vigenere_cipher_helper": "tsx codewars/vigenere_cipher_helper.ts"
     },
     "repository": {
         "type": "git",
